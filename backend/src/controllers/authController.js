@@ -3,7 +3,6 @@ import User from "../models/User.js";
 import generateToken from "../utils/generateToken.js";
 import { generateOtp, sendOtp } from "../utils/sendOtp.js";
 
-
 // =================== SIGNUP ===================
 
 // @desc Signup user (send OTP)
@@ -84,7 +83,6 @@ export const verifySignupOtp = async (req, res) => {
     res.status(500).json({ message: "Server error", error: error.message });
   }
 };
-
 
 // =================== LOGIN ===================
 
